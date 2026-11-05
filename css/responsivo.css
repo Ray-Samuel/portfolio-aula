@@ -1,0 +1,120 @@
+@media (max-width: 1000px) {
+  .projects {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: 2rem;
+  }
+
+  .project:nth-child(2) {
+    padding-right: 0;
+    border-right: 0;
+  }
+
+  .project:nth-child(3) {
+    grid-column: 1 / -1;
+    padding: 2rem 0 0;
+    border-top: 1px solid var(--border);
+    border-right: 0;
+  }
+
+  .about {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .contact__layout {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+/* Tablets */
+@media (max-width: 900px) {
+  .hero__inner {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+  .photo {
+    margin-inline: 1rem auto;
+  }
+
+  .hero__star {
+    top: -3rem;
+    width: 3.5rem;
+  }
+
+  .about,
+  .skills {
+    grid-template-columns: 1fr;
+  }
+
+  .contact__layout {
+    grid-template-columns: 1fr;
+  }
+
+  .contact__intro {
+    max-width: 100%;
+  }
+}
+
+/* Celulares */
+@media (max-width: 640px) {
+  .nav__link {
+    display: none;
+  }
+
+  .hero {
+    padding: 4rem 0;
+  }
+
+  .section {
+    padding: 4rem 0;
+  }
+
+  .section__head {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .section__title--big {
+    font-size: 3rem;
+  }
+
+  .container {
+    width: min(100% - 2.5rem, 1600px);
+    padding: 1.5rem 0;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+  }
+
+  .project,
+  .project:first-child,
+  .project:last-child,
+  .project:nth-child(2),
+  .project:nth-child(3) {
+    grid-column: auto;
+    padding: 1.5rem 0;
+    border-right: 0;
+    border-top: 1px solid var(--border);
+  }
+
+  .project:first-child {
+    padding-top: 0;
+    border-top: 0;
+  }
+
+  .education-card,
+  .skills__group {
+    padding: 1.1rem;
+  }
+
+  .contact {
+    padding: 1.1rem;
+  }
+
+  .photo__sad {
+    left: -1.2rem;
+  }
+}
